@@ -1,0 +1,10 @@
+#outer {
+  padding-bottom: 40px;
+}
+
+.search {
+  width: 400px;
+  margin-left: 0px;
+  padding: 15px;
+  background-color: #eee;
+}

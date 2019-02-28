@@ -1,0 +1,27 @@
+<h3>Condition Information</h3>
+<div class="container">
+  <table class="table table-striped" [mfData]="data" #mf="mfDataTable">
+    <thead>
+      <tr>
+        <th class="th-sm"><mfDefaultSorter by="name">Name</mfDefaultSorter></th>
+        <th class="th-sm">
+          <mfDefaultSorter by="dateFirstRecorded"
+            >Date First Recorded</mfDefaultSorter
+          >
+        </th>
+        <th class="th-sm">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let condition of mf.data">
+        <td>{{condition.name}}</td>
+        <td>{{condition.dateFirstRecorded}}</td>
+        <td>
+          <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term={{condition.name}}"
+            >Link</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

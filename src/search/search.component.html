@@ -1,0 +1,23 @@
+<h3>Search</h3>
+<div id="outer">
+  <div class="search">
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter patient ID"
+        #search
+      />
+      <span class="input-group-btn">
+        <button
+          class="btn btn-primary active"
+          role="button"
+          type="submit"
+          (click)="doSearch(search.value)"
+        >
+          Search
+        </button>
+      </span>
+    </div>
+  </div>
+</div>
